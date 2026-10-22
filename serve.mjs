@@ -1,9 +1,9 @@
-// Servidor LOCAL de demo. En producción publica dist en un hosting.
+// Servidor LOCAL de demo. En producción GitHub Pages publica la carpeta public.
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 const port = Number(process.argv[2]);
-const root = path.resolve('dist');
+const root = path.resolve('public');
 const types = { '.html':'text/html; charset=utf-8', '.js':'text/javascript; charset=utf-8', '.json':'application/json; charset=utf-8' };
 createServer(async (req, res) => {
  res.setHeader('Access-Control-Allow-Origin', '*'); // Desarrollo local.

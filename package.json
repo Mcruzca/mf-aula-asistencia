@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "node build.mjs",
-    "start": "npm run build && node serve.mjs 4303"
-  },
-  "devDependencies": {
-    "@softarc/native-federation": "3.5.6",
-    "@softarc/native-federation-esbuild": "3.5.6"
+    "start": "node serve.mjs 4303"
   }
 }

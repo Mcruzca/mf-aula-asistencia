@@ -1,0 +1,10 @@
+{
+  "name": "asistencia",
+  "shared": [],
+  "exposes": [
+    {
+      "key": "./Widget",
+      "outFileName": "widget.js"
+    }
+  ]
+}

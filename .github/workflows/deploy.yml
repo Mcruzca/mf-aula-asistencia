@@ -1,6 +1,6 @@
 # Pipeline del microfrontend "asistencia" (JS + Web Component, sin Angular).
-# Solo corre cuando cambia ESTE repo: compila con esbuild, revisa que exista
-# remoteEntry.json y lo publica. El shell no se vuelve a desplegar.
+# No instala ni compila nada: publica la carpeta public tal cual.
+# Solo corre cuando cambia ESTE repo. El shell no se vuelve a desplegar.
 name: Desplegar asistencia
 
 on:
@@ -23,23 +23,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-
-      - name: Instalar dependencias
-        run: npm ci
-
-      - name: Compilar
-        run: npm run build
-
       - name: Verificar que el remoto se puede federar
-        run: test -f dist/remoteEntry.json
+        run: test -f public/remoteEntry.json && test -f public/widget.js
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: public
 
   deploy:
     needs: build
