@@ -5,6 +5,10 @@
     {
       "key": "./Widget",
       "outFileName": "widget.js"
+    },
+    {
+      "key": "./ListaAlumnos",
+      "outFileName": "lista-alumnos.js"
     }
   ]
 }

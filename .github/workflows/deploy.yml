@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Verificar que el remoto se puede federar
-        run: test -f public/remoteEntry.json && test -f public/widget.js
+        run: test -f public/remoteEntry.json && test -f public/widget.js && test -f public/lista-alumnos.js
 
       - uses: actions/upload-pages-artifact@v3
         with:

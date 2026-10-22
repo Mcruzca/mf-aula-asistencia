@@ -1,0 +1,8 @@
+[
+  { "id": "A-01", "nombre": "Ana Pérez", "grupo": "3A" },
+  { "id": "A-02", "nombre": "Luis Rojas", "grupo": "3A" },
+  { "id": "A-03", "nombre": "María Quispe", "grupo": "3A" },
+  { "id": "A-04", "nombre": "Jorge Huamán", "grupo": "3A" },
+  { "id": "B-01", "nombre": "Carla Torres", "grupo": "3B" },
+  { "id": "B-02", "nombre": "Diego Salas", "grupo": "3B" }
+]
