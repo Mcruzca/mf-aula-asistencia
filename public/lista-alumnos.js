@@ -44,7 +44,7 @@ class ListaAlumnos extends HTMLElement {
    const grupo = this.getAttribute('grupo');
    const seleccionable = this.hasAttribute('seleccionable');
    const alumnos = this.alumnos.filter(a => !grupo || a.grupo === grupo);
-   this.shadowRoot.innerHTML = ESTILOS + `<section><small>PIEZA DE ASISTENCIA · localhost:4303</small>
+   this.shadowRoot.innerHTML = ESTILOS + `<section><small>PIEZA COMPARTIDA · viene de Asistencia</small>
      <h3></h3><ul></ul></section>`;
    this.shadowRoot.querySelector('h3').textContent = 'Alumnos' + (grupo ? ' · grupo ' + grupo : '') + ' (' + alumnos.length + ')';
    const lista = this.shadowRoot.querySelector('ul');

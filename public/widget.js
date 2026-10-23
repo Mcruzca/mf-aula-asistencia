@@ -11,7 +11,7 @@ class Asistencia extends HTMLElement {
    // aula-lista-alumnos es la pieza que este módulo comparte (lista-alumnos.js); aquí se usa igual que en los demás.
    this.shadowRoot.innerHTML = `
      <style>:host {display:block} section {border:2px solid #087f8c;padding:20px;border-radius:8px}</style>
-     <section><small>JAVASCRIPT PURO · localhost:4303</small><h2>Asistencia al taller</h2>
+     <section><small>JAVASCRIPT PURO · repositorio mf-aula-asistencia</small><h2>Asistencia al taller</h2>
      <p id="saludo"></p><p>Marca a los alumnos presentes:</p>
      <aula-lista-alumnos grupo="3A" seleccionable style="--aula-lista-color:#087f8c">Lista de alumnos no disponible.</aula-lista-alumnos>
      <p aria-live="polite">Asistencias registradas: <span id="total">0</span> <span id="nombres"></span></p></section>`;
